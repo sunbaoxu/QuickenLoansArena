@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>帮助中心</title>
+	<link rel="stylesheet" type="text/css" href="../../css/index.css">
+</head>
+<body>
+	<div class="wrap">
+		<header class="header">
+			<aside class="fan"><a href="../wode.html" class="fa fa-angle-left" id="fan"></a></aside>
+			<aside>
+				<a href="javascript:;" class="title">帮助中心</a>
+				<!-- <nav>
+					<a href="javascript:;" class="on">全部</a>
+					<a href="javascript:;">借现金</a>
+					<a href="javascript:;">还信用卡</a>
+				</nav> -->
+			</aside>
+			<aside class="zi">
+
+			</aside>
+		</header>
+		<div class="main" id="wrapper">
+			<div id="scroller">
+				<section class="kuai help_fen">
+					<div class="help_con">
+						<h2>分类1</h2>
+						<ul class="con_ul">
+							<li>
+								<h3><span>问题1</span><i class="fa fa-angle-down"></i></h3>
+							</li>
+							<li>
+								<h3><span>问题2</span><i class="fa fa-angle-down"></i></h3>
+							</li>
+							<li>
+								<h3><span>问题3</span><i class="fa fa-angle-down"></i></h3>
+							</li>
+						</ul>
+					</div>
+					<div class="help_con">
+						<h2>分类2</h2>
+						<ul class="con_ul">
+							<li>
+								<h3><span>问题1</span><i class="fa fa-angle-down"></i></h3>
+							</li>
+							<li>
+								<h3><span>问题2</span><i class="fa fa-angle-down"></i></h3>
+							</li>
+							<li>
+								<h3><span>问题3</span><i class="fa fa-angle-down"></i></h3>
+							</li>
+						</ul>
+					</div>
+					<div class="help_con">
+						<h2>分类1</h2>
+						<ul class="con_ul">
+							<li>
+								<h3>
+									<span>问题1</span>
+									<i class="fa fa-angle-down"></i>
+								</h3>
+							</li>
+							<li>
+								<h3><span>问题2</span><i class="fa fa-angle-down"></i></h3>
+							</li>
+							<li>
+								<h3><span>问题3</span><i class="fa fa-angle-down"></i></h3>
+							</li>
+						</ul>
+					</div>
+					<div class="help_con">
+						<h2>分类2</h2>
+						<ul class="con_ul">
+							<li>
+								<h3><span>问题1</span><i class="fa fa-angle-down"></i></h3>
+							</li>
+							<li>
+								<h3><span>问题2</span><i class="fa fa-angle-down"></i></h3>
+							</li>
+							<li>
+								<h3><span>问题3</span><i class="fa fa-angle-down"></i></h3>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+	<script src="../../bin/zepto/dist/zepto.js"></script>
+	<script src="../../bin/iscroll/build/iscroll.js"></script>
+	<script src="../../bin/iscroll/demos/demoUtils.js"></script>
+	<script type="text/javascript">
+		new IScroll('#wrapper');
+
+		//$(".con_ul").find("h3").toggleClass("on")
+		//
+		//
+		$(".con_ul").find("h3").tap(function(e){
+			if($(this).find("i").hasClass("fa-angle-down")){
+				$(this).find("i").addClass("fa-angle-up").removeClass("fa-angle-down")
+			}
+			else{
+
+				$(this).find("i").addClass("fa-angle-down").removeClass("fa-angle-up")
+
+			}
+			
+		})
+	
+
+	</script>
+</body>
+
+</html>

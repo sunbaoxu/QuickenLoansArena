@@ -1,0 +1,164 @@
+.wrap_basis{
+	 .main_basis{
+	 	 #scroller{
+	 	 	padding-bottom:0;
+	 	 }
+	 }
+
+	 .presice_footer{
+	 	margin-top:1.5rem;
+	 }
+}
+.basis .kuai{
+	margin-bottom:0;
+}
+.basis_con{
+	nav{
+		width:100%;
+		background:#F5F5F5;
+		padding-top:1.5rem;
+		display:-webkit-box;
+		-webkit-box-pack:center;
+		a{
+			display:block;
+			font-size:1.3rem;
+			color:#a6a6a6;
+			display:-webkit-box;
+			-webkit-box-pack:center;
+			-webkit-box-align:center;
+			span,i{
+				display:block;
+			}
+			&.on{
+				color:#4c4c4c;
+			}
+
+			.yuan{
+				width:0.4rem;
+				height:0.4rem;
+				border-radius:100%;
+				background:#a6a6a6;
+				margin:0 0.2rem;
+			}
+
+			.jiao{
+				margin:0 0.2rem;
+				font-size:1.8rem;
+				color:#a6a6a6;
+			}
+
+		}
+	}
+}
+
+.basis_ul{
+	width:100%;
+	li{
+		&>h3{
+			padding:2rem 0 1rem 1.5rem;
+			font-size:1.3rem;
+			color:#4c4c4c;
+			background:#F5F5F5;
+		}
+		ol{
+			background:#fff;
+			li{
+				padding-left:1.5rem;
+				border-bottom:1px solid #E6E6E6;
+				display:-webkit-box;
+				box-sizing:border-box;
+				-webkit-box-align:center;
+				font-size:1.4rem;
+				height:4.5rem;
+				span,input{
+					display:block;
+				}
+				&>span{
+					margin-right:1.5rem;
+				}
+				&>input{
+					-webkit-box-flex:1;
+					text-align:right;
+					height:100%;
+					border:none;
+					outline:none;
+					padding-right:2rem;
+				}
+				&>p{
+					-webkit-box-flex:1;
+					height:100%;
+					display:-webkit-box;
+					position:relative;
+					&>span{
+						display:block;
+						-webkit-box-flex:1;
+						height:100%;
+						display:-webkit-box;
+						-webkit-box-pack:end;
+						-webkit-box-align:center;
+						i,b{
+							display:block;
+						}
+						b{
+							margin:0 1.5rem 0 2rem;
+						}
+						.dui{
+							width:1.5rem;
+							height:1.5rem;
+							background:url(../img/precise/img/b1.png) no-repeat;
+							background-size: contain;
+						}
+
+						.sex_nan{
+							width:1.5rem;
+							height:1.5rem;
+							background:url(../img/precise/img/nan1.png) no-repeat;
+							background-size: contain;
+						}
+
+						.sex_nv{
+							width:1.5rem;
+							height:1.5rem;
+							background:url(../img/precise/img/nv1.png) no-repeat;
+							background-size: contain;
+						}
+					}
+
+					&>input{
+						position:absolute;
+						width:50%;
+						height:100%;
+						opacity:0;
+						&.last{
+							left:50%;
+						}
+					}
+
+					&>input:checked{
+						opacity:0;
+						&+span{
+							.dui{
+								background:url(../img/precise/img/b.png) no-repeat;
+								background-size: contain;
+							}
+
+							.sex_nan{
+								background:url(../img/precise/img/nan.png) no-repeat;
+								background-size: contain;
+							}
+
+							.sex_nv{
+								background:url(../img/precise/img/nv.png) no-repeat;
+								background-size: contain;
+							}
+						}
+					}
+				}
+				&:last-child{
+					border:none;	
+				}
+			}
+		}
+		
+	}
+}

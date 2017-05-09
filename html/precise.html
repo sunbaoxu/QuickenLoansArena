@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>精确匹配</title>
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
+</head>
+<body>
+	<div class="wrap">
+		<header class="header">
+			<aside class="loge"></aside>
+			<aside>
+				<a href="javascript:;" class="title">精确匹配</a>
+				<!-- <nav>
+					<a href="javascript:;" class="on">全部</a>
+					<a href="javascript:;">借现金</a>
+					<a href="javascript:;">还信用卡</a>
+				</nav> -->
+			</aside>
+			<aside>
+			</aside>
+		</header>
+		<div class="main precise" id="wrapper">
+			<div id="scroller">
+				<section class="kuai k_borrow">
+					<header class="borrow_title">
+						<h3 class="jie">
+							<span>借现金</span><i>（元）</i>
+						</h3>
+					</header>
+					<hgroup class="presice_title">
+						<input type="number" id="presiceTh" value="0" class="presiceTh">
+						<h4>500-50000000元</h4>
+					</hgroup>
+					<div class="presice_con">
+						<div class="cont" id="presice_nav">
+							<ul class="precise_ul"></ul>
+							<p class="green_on"></p>
+						</div>
+					</div>
+				</section>
+				<section class="kuai k_borrow">
+					<header class="borrow_title">
+						<h3 class="xian">
+							<span>借款期限</span>
+						</h3>
+					</header>
+					<hgroup class="presice_title presice_title1">
+						
+						<input type="number" id="presiceTh1" value="1" class="presiceTh">
+						<h5 class="qiehuan" id="qiehuan"><span class="on">天</span><span>月</span></h5>
+					</hgroup>
+					<div class="presice_con">
+						<div class="cont" id="presice_navtian">
+							<ul class="precise_ul precise_ul1"></ul>
+							<p class="green_on"></p>
+						</div>
+					</div>
+				</section>
+				<section class="kuai k_borrow">
+					<header class="borrow_title">
+						<h3 class="yao">
+							<span>我要</span>
+						</h3>
+					</header>
+					<div class="presice_title presice_title2 qiehuan" >
+						<span class="on">借现金</span><span>还信用卡</span>
+					</div>
+				</section>
+				<footer class="presice_footer">
+					<a class="presice_btn" href="precise/presice_basis.html">下一步</a>
+				</footer>
+			</div>
+		</div>
+		<footer class="footer">
+			<nav>
+				<a href="../index.html">
+					<img src="../img/ind/ind/f7.png" alt="">
+					<img src="../img/ind/ind/f6.png" alt="" class="block">
+					<span>首页</span>
+				</a>
+				<a href="chan.html">
+					<img src="../img/ind/ind/f4.png" alt="">
+					<img src="../img/ind/ind/f5.png" alt="" class="block">
+					<span>产品</span>
+				</a>
+				<a href="javascript:;" class="on">
+					<img src="../img/ind/ind/f9.png" alt="">
+					<img src="../img/ind/ind/f8.png" alt="" class="block">
+					<span>精准匹配</span>
+				</a>
+				<a href="wode.html">
+					<img src="../img/ind/ind/f11.png" alt="">
+					<img src="../img/ind/ind/f10.png" alt="" class="block">
+					<span>我的</span>
+				</a>
+			</nav>
+		</footer>
+	</div>
+	<script src="../bin/zepto/dist/zepto.js"></script>
+	<script src="../bin/swiper/dist/js/swiper.min.js"></script>
+	<script src="../bin/iscroll/build/iscroll.js"></script>
+	<script src="../js/touch.js"></script>
+	<script src="../js/precise/precise.js"></script>
+	<script type="text/javascript">
+		/*new Swiper('#presice_nav', {
+	        slidesPerView:"auto",
+	        spaceBetween:0,//子标签之间的距离
+	        freeMode: true,
+	        paginationClickable: true
+		});*/
+		
+
+		
+
+
+
+		new IScroll('#wrapper', {
+			freeScroll: true ,
+			scrollbars:true,
+			mouseWheel: true,
+			interactiveScrollbars: true,
+			shrinkScrollbars: 'scale',
+			fadeScrollbars: true
+		});
+
+
+		//切换样式
+		$(".qiehuan span").tap(function(){
+			$(this).addClass("on").siblings().removeClass("on")
+			xuanran()
+		})
+	</script>
+</body>
+
+</html>

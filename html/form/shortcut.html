@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>快捷登录</title>
+	<link rel="stylesheet" type="text/css" href="../../css/index.css">
+</head>
+<body>
+	<div class="wrap">
+		<div class="main f_main">
+			<header class="f_header">
+				<span>账号登录</span>
+				<span class="on">快捷登录</span>
+			</header>
+			<form action="" class="f_form">
+				<p>
+					<input type="text" placeholder="手机号">
+					<span class="fa  fa-close guan"></span>
+				</p>
+				<p>
+					<input type="text" placeholder="图文验证码">
+					<span class="yan">T f 4 3</span>
+				</p>
+				<p>
+					<input type="password" placeholder="短信验证码 ">
+					<span class="yan yan1">获取验证码</span>
+				</p>
+			</form>
+			<footer class="f_footer">
+				<p>若您尚未注册，登陆即表示您同意成为速贷之家用户</p>
+				<p><button class="f_btn">登录</button></p>
+				<p>
+					<a href="forget.html">忘记密码</a>
+					<a href="register.html">快速注册</a>
+				</p>
+			</footer>
+		</div>
+	</div>
+</body>
+<script src="../../bin/zepto/dist/zepto.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".f_header span").on("tap",function(e){
+		e.stopPropagation();
+		/*if(!$(this).hasClass("on")){
+			console.log("sf")
+			$(this).addClass("on").siblings().removeClass("on");
+		}*/
+
+		if($(this).text()=="账号登录"){
+			location.href="../../form.html"
+		}
+		else if($(this).text()=="快捷登录"){
+			return false
+		}
+
+	})
+
+	$(".f_btn").on("tap",function(){
+		location.href="../../index.html"
+	})
+
+})
+</script>
+</html>

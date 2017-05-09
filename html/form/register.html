@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>注册</title>
+	<link rel="stylesheet" type="text/css" href="../../css/index.css">
+</head>
+<body>
+	<div class="wrap">
+		<header class="header forget_h">
+			<h1><span>注册</span><a href="shortcut.html"  class="fa fa-angle-left"></a></h1>
+		</header>
+		<div class="main f_main  forget">
+			<form action="" class="f_form">
+				<p>
+					<input type="text" placeholder="手机号">
+					<span class="fa  fa-close guan"></span>
+				</p>
+				<p>
+					<input type="text" placeholder="图文验证码">
+					<span class="yan">T f 4 3</span>
+				</p>
+				<p>
+					<input type="password" placeholder="短信验证码 ">
+					<span class="yan yan1">获取验证码</span>
+				</p>
+				<p>
+					<input type="password" placeholder="6-20位密码">
+					<span class="fa  fa-close guan guan1"></span>
+					<span class="fa  fa-eye eye"></span>
+				</p>
+				<p>
+					<input type="text" placeholder="3-15位用户名（选填）">
+					<span class="fa  fa-close guan"></span>
+				</p>
+			</form>
+			<footer class="f_footer">
+				<p></p>
+				<p><button>注册</button></p>
+				<p><a href="javascript:;" style="border:none;">已有账号？去登录</a></p>
+			</footer>
+		</div>
+	</div>
+</body>
+<script src="../../bin/zepto/dist/zepto.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".f_header span").on("tap",function(e){
+		e.stopPropagation();
+		/*if(!$(this).hasClass("on")){
+			console.log("sf")
+			$(this).addClass("on").siblings().removeClass("on");
+		}*/
+
+		if($(this).text()=="账号登录"){
+			location.href="../../form.html"
+		}
+		else if($(this).text()=="快捷登录"){
+			return false
+		}
+
+	})
+})
+</script>
+</html>

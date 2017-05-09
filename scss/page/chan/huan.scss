@@ -1,0 +1,141 @@
+.main{
+	width:100%;
+	overflow-y:auto;
+	.huan_ul{
+		width:80%;
+		padding-top:4rem;
+		&>li{
+			width:100%;
+			background:#fff;
+			border-radius:0.8rem;
+			display:-webkit-box;
+			-webkit-box-orient:vertical;
+			-webkit-box-align:center;
+			-webkit-box-pack:center;
+			box-shadow:2px 2px 4px 4px #ccc;
+			dl{
+				margin-top:2.5rem;
+				dt{
+					width:6.8rem;
+					height:6.8rem;
+					background:#eee;
+					border-radius:100%;
+					margin-bottom:1.5rem;
+				}
+				dd{
+					font-size:1.6rem;
+					color:#026EB9;
+					text-align:center;
+				}
+
+			}
+
+			.huan_p1{
+				font-size:1rem;
+				line-height:1.6rem;
+				margin:1.3rem;
+				span{
+					&:nth-child(2){
+						margin:0 0.6rem;
+					}
+				}
+			}
+			.huan_p2{
+				padding:0 1.8rem;
+				line-height:1.4rem;
+				cont-size:1.3rem;
+				margin-bottom:3rem;
+			}
+			.huan_main{
+
+				.hm_tu{
+					text-align:center;
+					i{
+						font-size:2.2rem;
+						text-shadow:2px 2px 2px 2px #ccc;
+						color:#CCCCCC;
+						&.on{
+							color:#12C581;
+						}
+					}
+				}
+
+				.hm_zi{
+					text-align:center;
+					margin:1.2rem 0;
+					font-size:1.2rem;
+					span{
+						&:last-child{
+							color:red;
+							margin-left:1.5rem;
+						}
+					}
+				}
+				ul{
+					li{
+						font-size:1.3rem;
+						span{
+							margin-right:1rem;
+						}
+						i{
+							color:#ccc;
+							&.on{
+								color:#12C581;
+							}
+						}
+					}
+				}
+
+				nav{
+					width:100%;
+					display:-webkit-box;
+					margin:1.6rem 0;
+					a{
+						display:block;
+						padding:0.3rem 0.6rem;
+						border-radius:1rem;
+						font-size:0.9rem;
+						margin-right:0.9rem;
+						&:first-child{
+							border:1px solid #DC665C;
+							color:#DC665C;
+						}
+						&:nth-child(2){
+							border:1px solid #05BCCC;
+							color:#05BCCC;
+						}
+						&:nth-child(3){
+							border:1px solid #985CE2;
+							color:#985CE2;
+						}
+						&:last-child{
+							border:1px solid #FCBA28;
+							color:#FCBA28;
+						}
+					}
+				}
+			}
+		}
+	}
+
+}
+.huan_ol{
+	bottom:6rem;
+	text-align:center;
+	width: 100%;
+	span{
+		width:1rem;
+		height:1rem;
+		border-radius:100%;
+		margin:0 0.4rem;
+		&.swiper-pagination-bullet{
+			background:#CAD7D0;
+			opacity:1;
+		}
+		
+		&.swiper-pagination-bullet-active{
+			background:#01CA7E;
+		}
+	}
+}
+

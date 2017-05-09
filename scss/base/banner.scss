@@ -1,0 +1,21 @@
+.m_banner{
+	width:100%;
+	height:auto;
+	background:#B8B8B8;
+	position:relative;
+	overflow:hidden;
+	ul{
+		display:-webkit-box;
+		height:100%;
+		li{
+			width:100%;
+			overflow:hidden;
+			a{
+				width:100%;
+				img{
+					width:100%;
+				}
+			}
+		}
+	}
+}

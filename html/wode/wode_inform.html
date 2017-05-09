@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>通知</title>
+	<link rel="stylesheet" type="text/css" href="../../css/index.css">
+</head>
+<body>
+	<div class="wrap">
+		<header class="header">
+			<aside class="fan wode_fan"><a href="../wode.html" class="fa fa-angle-left" id="fan"></a></aside>
+			<aside>
+				<!-- <a href="javascript:;" class="title">首页</a> -->
+				<nav class="wode_nav">
+					<a href="wode_inquire.html">进度查询</a>
+					<a href="wode_remind.html">还款提醒</a>
+					<a href="javascript:;" class="on">通知</a>
+				</nav>
+			</aside>
+			<aside>
+
+			</aside>
+		</header>
+		<div class="main" id="wrapper">
+			<div id="scroller">
+				<section class="kuai Winform_kuai">
+					<header class="Winform_title">
+						<h3>今天</h3>
+					</header>
+					<div class="Winform_con">
+						<h3>主题名</h3>
+						<div class="Wbanner"></div>
+						<p class="Wp">
+							活动简介胡奥反倒是你电脑丰富的数据风刀霜剑范德萨松岛枫酒店了房间打飞机都是来访接待室六块腹肌死了福建省地方了坚实的收到了防静电水力发电士大夫绝对是来访接待室
+						</p>
+					</div>
+					
+				</section>
+				<section class="kuai Winform_kuai">
+					<header class="Winform_title">
+						<h3>昨天</h3>
+					</header>
+					<div class="Winform_con">
+						<h3>清仓大甩卖</h3>
+						<div class="Wbanner"></div>
+						<p class="Wp">
+							活动简介胡奥反倒是你电脑丰富的数据风刀霜剑范德萨松岛枫酒店了房间打飞机都是来访接待室六块腹肌死了福建省地方了坚实的收到了防静电水力发电士大夫绝对是来访接待室
+						</p>
+					</div>
+					
+				</section>
+				<section class="kuai Winform_kuai">
+					<header class="Winform_title">
+						<h3>2013-03-33</h3>
+					</header>
+					<div class="Winform_con">
+						<h3>产品上线了</h3>
+						<div class="Wbanner"></div>
+						<p class="Wp">
+							活动简介胡奥反倒是你电脑丰富的数据风刀霜剑范德萨松岛枫酒店了房间打飞机都是来访接待室六块腹肌死了福建省地方了坚实的收到了防静电水力发电士大夫绝对是来访接待室
+						</p>
+					</div>
+					
+				</section>
+			</div>
+		</div>
+	</div>
+	<script src="../../bin/zepto/dist/zepto.js"></script>
+	<script src="../../bin/swiper/dist/js/swiper.min.js"></script>
+	<script src="../../bin/iscroll/build/iscroll.js"></script>
+	<script type="text/javascript">
+		/**
+		 * [slidesPerView description]
+		 * @type {String}
+		 */
+		new Swiper('#con_nav', {
+	        slidesPerView:"auto",
+	        spaceBetween:0,
+	        freeMode: true
+		});
+
+		/**
+		 * options.scrollbars 是否显示默认滚动条  false
+		 * options.fadeScrollbars  是否渐隐滚动条，关掉可以加速  true
+
+		options.interactiveScrollbars  用户是否可以拖动滚动条  false
+		 */
+
+		new IScroll('#wrapper', {
+			freeScroll: true ,
+			scrollbars:true,
+			mouseWheel: true,
+			interactiveScrollbars: true,
+			shrinkScrollbars: 'scale',
+			fadeScrollbars: true
+		});
+		
+	</script>
+</body>
+
+</html>

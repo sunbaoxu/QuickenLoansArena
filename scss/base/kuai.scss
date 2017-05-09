@@ -1,0 +1,63 @@
+.kuai{
+	background:#fff;
+	margin-bottom:5px;
+	width:100%;
+	display:-webkit-box;
+	-webkit-box-orient:vertical;
+	.k_h{
+		width:100%;
+		overflow:hidden;
+		h3{
+			width:100%;
+			display:-webkit-box;
+			padding:0 15px;
+			box-sizing:border-box;
+			-webkit-box-pack:justify;
+			height:31px;
+			-webkit-box-align:center;
+			a,span{
+				display:block;
+			}
+			&>span{
+				-webkit-box-flex:1;
+				color:#166eb3;
+				font-size:15px;
+			}
+			a{
+				color:#999999;
+				font-size:1rem;
+				i{
+					font-size:1.6rem;
+					color:#BCBCBC;
+					margin-left:0.5rem;
+					display:inline-block;
+					vertical-align:middle;
+					margin-top:-0.2rem;
+				}
+			}
+		}	
+
+	}
+
+	.hui{
+		width:100%;
+		display:-webkit-box;
+		height:auto;
+		padding-left:15px;
+		box-sizing:border-box;
+		li{
+			margin-right:10px;
+			width:36%;
+			height:auto;
+			background:#E6E6E6;
+			border-radius:4px;
+			overflow:hidden;
+			img	{
+				width:100%;
+			}
+		}
+		
+	}
+}
+
+

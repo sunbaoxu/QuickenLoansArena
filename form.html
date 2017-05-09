@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>登录注册</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	<div class="wrap">
+		<div class="main f_main">
+			<header class="f_header">
+				<span class="on">账号登录</span>
+				<span>快捷登录</span>
+			</header>
+			<form action="" class="f_form">
+				<p>
+					<input type="text" placeholder="手机论坛用户名">
+					<span class="fa  fa-close guan"></span>
+				</p>
+				<p>
+					<input type="password" placeholder="6-20位密码">
+					<span class="fa  fa-close guan guan1"></span>
+					<span class="fa  fa-eye eye"></span>
+				</p>
+				<p>
+					<input type="text" placeholder="图文验证码">
+					<span class="yan">T f 4 3</span>
+				</p>
+			</form>
+			<footer class="f_footer">
+				<p></p>
+				<p><button class="f_btn">登录</button></p>
+				<p>
+					<a href="html/form/forget.html">忘记密码</a>
+					<a href="html/form/register.html">快速注册</a>
+				</p>
+			</footer>
+		</div>
+	</div>
+</body>
+<script src="bin/zepto/dist/zepto.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".f_header span").on("tap",function(e){
+		e.stopPropagation();
+		/*if(!$(this).hasClass("on")){
+			console.log("sf")
+			$(this).addClass("on").siblings().removeClass("on");
+		}*/
+
+		if($(this).text()=="账号登录"){
+			return false
+		}
+		else if($(this).text()=="快捷登录"){
+			location.href="html/form/shortcut.html"
+		}
+
+	})
+
+	$(".f_btn").on("tap",function(){
+		location.href="./index.html"
+	})
+})
+</script>
+</html>

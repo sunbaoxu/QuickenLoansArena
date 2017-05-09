@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>产品详情</title>
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
+</head>
+<body>
+	<div class="wrap">
+		<header class="header">
+			<aside class="fan"><a href="chan.html" class="fa fa-angle-left"></a></aside>
+			<aside>
+				<a href="javascript:;" class="title">产品详情</a>
+				<!-- 				<nav>
+					<a href="javascript:;" class="on">全部</a>
+					<a href="javascript:;">借现金</a>
+					<a href="javascript:;">还信用卡</a>
+				</nav> -->
+			</aside>
+			<aside class="ping">
+				<a href="javascript:;" class="fa fa-heart-o"></a>
+				<a href="javascript:;" class="fa fa-share-square-o"></a>
+			</aside>
+		</header>
+		<div class="main" id="wrapper">
+			<div id="scroller">
+				<section class="kuai">
+					<div class="chan_con xiang_con">
+						<section>
+							<dl>
+								<dt><a href="javascript:;"></a></dt>
+								<dd>
+									<h3>
+										<aside><span>信用钱包</span><i></i></aside>
+										<aside>
+										</aside>
+									</h3>
+									<h4>信用钱包</h4>
+									<p>
+										<span></span>
+										<span>成功申请<i>1234次</i></span>
+										<span>评论<i>1234</i>次</span>
+										
+									</p>
+								</dd>
+							</dl>
+							<nav>
+								<a href="javascript:;">HOT</a>
+								<a href="javascript:;">标签一</a>
+								<a href="javascript:;">将还款</a>
+								<a href="javascript:;">已还清</a>
+							</nav>
+							<div class="yuan">
+								<span class="right"></span>
+								<span class="left"></span>
+							</div>
+						</section>
+					</div>
+				</section>
+				<section class="kuai">
+					<div class="xiang_con">
+						<section class="Xcon_nav">
+							<nav>
+								<a href="javascript:;">淘宝</a>
+								<a href="javascript:;">淘宝</a>
+								<a href="javascript:;">淘宝</a>
+								<a href="javascript:;">淘宝</a>
+								<a href="javascript:;">淘宝</a>
+								<a href="javascript:;">淘宝</a>
+								<a href="javascript:;">淘宝</a>
+							</nav>
+							<nav>
+								<a href="javascript:;">淘宝</a>
+								<a href="javascript:;">淘宝</a>
+								<a href="javascript:;">淘宝</a>
+								<a href="javascript:;">淘宝</a>
+								<a href="javascript:;"  class="none"></a>
+								<a href="javascript:;" class="none"></a>
+								<a href="javascript:;" class="none"></a>
+							</nav>
+						</section>
+						<section class="Xcon_nav1">
+							<nav>
+								<a href="javascript:;" class="on">产品介绍</a>
+								<a href="javascript:;">申请条件</a>
+								<a href="javascript:;">申请材料</a>
+							</nav>
+						</section>
+						<section class="Xcon_nav2">
+							<ul>
+								<li>
+									<b>额度：</b>
+									<span>1000~10000元</span>
+								</li>
+								<li>
+									<b>借款期限：</b>
+									<span>1、2、3个月</span>
+								</li>
+								<li>
+									<b>借款利率：</b>
+									<span>5%/月</span>
+								</li>
+								<li>
+									<b>还款方式：</b>
+									<span>等额本息还款</span>
+								</li>
+								<li>
+									<b>服务费：</b>
+									<span>10%</span>
+								</li>
+								<li>
+									<b>调去后台字段显示到前端</b>
+								</li>
+							</ul>
+						</section>
+					</div>
+				</section>
+				<section class="kuai">
+					<div class=" xiang_con1">
+						<div class="x_left">
+							<h3>综合得分</h3>
+							<p>
+								<i class="fa fa-star on"></i>
+								<i class="fa fa-star on"></i>
+								<i class="fa fa-star on"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</p>
+							<h4>4.5分</h4>
+						</div>		
+						<div class="x_rig">
+							<ul>
+								<li>用户体验满意度  5.0分</li>
+								<li>用户体验满意度  5.0分</li>
+								<li>用户体验满意度  5.0分</li>
+							</ul>	
+						</div>			
+					</div>
+				</section>
+				<footer class="k_footer">
+					<span>评论(22)</span>
+					<span>我要借款</span>
+				</footer>
+			</div>
+		</div>
+
+	</div>
+	<script src="../bin/zepto/dist/zepto.js"></script>
+	<script src="../bin/swiper/dist/js/swiper.min.js"></script>
+	<script src="../bin/iscroll/build/iscroll.js"></script>
+	<script src="../bin/iscroll/demos/demoUtils.js"></script>
+	<script type="text/javascript">
+		var myScroll;
+
+		function loaded () {
+			myScroll = new IScroll('#wrapper', { scrollX: true, freeScroll: true });
+		}
+		document.addEventListener('touchmove', function (e) { }, isPassive() ? {
+			capture: false,
+			passive: false
+		} : true);
+
+		loaded () 
+	</script>
+</body>
+</html>

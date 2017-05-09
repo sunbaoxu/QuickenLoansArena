@@ -1,0 +1,76 @@
+.cont{
+	width:100%;
+	overflow: hidden;
+	.con_tuwen{
+		li{
+			padding:10px 15px 0 15px;
+			dl{	
+				width:100%;
+				display:-webkit-box;
+				margin-bottom:5px;
+				dt{
+					width:65px;
+					height:65px;
+					background:#E6E6E6;
+					margin-right:10px;
+				}
+
+				dd{
+					-webkit-box-flex:1;
+					
+					h3,p{
+						width:100%;
+						display:-webkit-box;
+						overflow:hidden;
+						word-break:break-all;
+						-webkit-box-orient:vertical;
+						-webkit-line-clamp:2;
+						text-overflow:ellipsis;
+					}
+					h3{
+						font-size:15px;
+						color:#333;
+						margin-bottom:4px;
+					}
+					p{
+						font-size:13px;
+						color:#4c4c4c;
+					}
+				}
+
+			}
+
+			.tuwen_for{
+				width:100%;
+				display:-webkit-box;
+				-webkit-box-align:center;
+				height:30px;
+
+				span,time{
+					display:block;
+					b{
+						font-size:10px;
+						color:#808080;
+						font-weight:normal;
+					}
+				}
+
+				span{
+					margin-right:30px;
+					a{
+						width:16px;
+						display:inline-block;
+						img{
+							width:100%;
+						}
+					}
+				}
+
+				time{
+					-webkit-box-flex:1;
+					text-align:right;
+				}
+			}
+		}
+	}
+}

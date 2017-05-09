@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>收藏</title>
+	<link rel="stylesheet" type="text/css" href="../../css/index.css">
+</head>
+<body>
+	<div class="wrap">
+		<header class="header">
+			<aside class="fan"><a href="../wode.html" class="fa fa-angle-left" id="fan"></a></aside>
+			<aside>
+				<a href="javascript:;" class="title">收藏</a>
+				<!-- <nav>
+					<a href="javascript:;" class="on">全部</a>
+					<a href="javascript:;">借现金</a>
+					<a href="javascript:;">还信用卡</a>
+				</nav> -->
+			</aside>
+			<aside class="zi">
+
+			</aside>
+		</header>
+		<div class="main" id="wrapper">
+			<div id="scroller">
+				<section class="kuai">
+					<div class="cang_con">
+						<nav id="cang_nav">
+							<a href="javascript:;"></a>
+							<a href="javascript:;">产品</a>
+							<a href="javascript:;"></a>
+							<a href="javascript:;" class="on">资讯</a>
+							<a href="javascript:;"></a>
+						</nav>
+					</div>
+				</section>
+				<section class="kuai m_tuwen">
+					<div class="cont ">
+						<ul class="con con_tuwen">
+							<li>
+								<dl>
+									<dt>
+										<a href="javascript:;">
+											<img src="" alt="">
+											<span>攻略哈哈</span>
+										</a>
+									</dt>
+									<dd>
+										<h3>我是无耻的标题党标题党标题党标题党标题党标题党标题党标题</h3>
+										<p>我是想白莲花一样的内容摘要，白莲花一样的内容摘要白莲花一样的内容摘要白莲花一样的内容摘要白莲花一样的内容摘要白莲花一样的内容摘要白莲花一样的内容摘要白莲花一样的内容摘要</p>
+									</dd>
+								</dl>
+								<footer class="tuwen_for">
+									<span>
+										<a href="javascript:;"><img src="../../img/ind/ind/f1.png" alt=""></a>
+										<b>1234</b>
+									</span>
+									<span>
+										<a href="javascript:;"><img src="../../img/ind/ind/f2.png" alt=""></a>
+										<b>收藏</b>
+									</span>
+									<time></time>
+								</footer>
+							</li>
+							<li>
+								<dl>
+									<dt>
+										<a href="javascript:;">
+											<img src="" alt="">
+											<span>攻略</span>
+										</a>
+									</dt>
+									<dd>
+										<h3>我是无耻的标题党标题党标题党标题党标题党标题党标题党标题</h3>
+										<p>我是想白莲花一样的内容摘要，白莲花一样的内容摘要白莲花一样的内容摘要白莲花一样的内容摘要白莲花一样的内容摘要白莲花一样的内容摘要白莲花一样的内容摘要白莲花一样的内容摘要</p>
+									</dd>
+								</dl>
+								<footer class="tuwen_for">
+									<span>
+										<a href="javascript:;"><img src="../../img/ind/ind/f1.png" alt=""></a>
+										<b>1234</b>
+									</span>
+									<span>
+										<a href="javascript:;" class="twf_on"><img src="../../img/ind/ind/f3.png" alt=""></a>
+										<b>收藏</b>
+									</span>
+									<time></time>
+								</footer>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+	<script src="../../bin/zepto/dist/zepto.js"></script>
+	<script src="../../bin/swiper/dist/js/swiper.min.js"></script>
+	<script src="../../bin/iscroll/build/iscroll.js"></script>
+	<script src="../../bin/iscroll/demos/demoUtils.js"></script>
+	<script src="../../bin/zepto/src/touch.js"></script>
+
+
+
+	<script type="text/javascript">
+		
+		$("#cang_nav a").tap(function(){
+			if($(this).text()){
+				$(this).addClass("on").siblings().removeClass("on")
+			}
+		})
+
+
+
+		$("#fan").tap(function(){
+			location.href="../wode.html"
+		})
+	</script>
+</body>
+
+</html>

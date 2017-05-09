@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>产品中心</title>
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
+</head>
+<body>
+	<div class="wrap">
+		<header class="header">
+			<aside class="loge"><a href="javascript:;"></a><span>杀马特</span></aside>
+			<aside>
+				<!-- <a href="javascript:;" class="title">首页</a> -->
+				<nav>
+				</nav>
+			</aside>
+			<aside class="zi">
+				<a href="javascript:;"><i class="fa fa-angle-right"></i>个人资料</a>
+			</aside>
+		</header>
+		<div class="main" id="wrapper">
+			<div id="scroller">
+				<section class="kuai user_con">
+					<header class="k_h">
+						<h3>
+							<span>进度查询</span>
+							<a href="wode/wode_inquire.html">查看全部<i class="fa fa-angle-right" ></i></a>
+						</h3>
+					</header>
+					<nav>
+						<a href="javascript:;">
+							<b class="login"></b>
+							
+							<span>审核中<i class="zhi">10</i></span>
+						</a>
+						<a href="javascript:;">
+							<b class="login"></b>
+							
+							<span>待放款<i class="zhi">35</i></span>
+						</a>
+						<a href="javascript:;">
+							<b class="login"></b>
+							<span>还款中<i class="zhi">24</i></span>
+						</a>
+					</nav>
+				</section>
+				<section class="kuai  user_fenlei">
+					<nav>
+						<a href="wode/refund.html">
+							<span class="huan">还款提醒</span>
+							<i class="fa fa-angle-right"></i>
+						</a>
+						<a href="wode/wode_collect.html"  id="wode_collect">
+							<span class="shou">我的收藏</span>
+							<i class="fa fa-angle-right"></i>
+							
+						</a>
+						<a href="wode/wode_help.html">
+							<span class="bang">帮助中心</span>
+							<i class="fa fa-angle-right"></i>
+						</a>
+					</nav>
+				
+				</section>
+			</div>
+		</div>
+		<footer class="footer">
+			<nav>
+				<a href="../index.html">
+					<img src="../img/ind/ind/f7.png" alt="">
+					<img src="../img/ind/ind/f6.png" alt="" class="block">
+					<span>首页</span>
+				</a>
+				<a href="chan.html">
+					<img src="../img/ind/ind/f4.png" alt="">
+					<img src="../img/ind/ind/f5.png" alt="" class="block">
+					<span>产品</span>
+				</a>
+				<a href="precise.html">
+					<img src="../img/ind/ind/f9.png" alt="">
+					<img src="../img/ind/ind/f8.png" alt="" class="block">
+					<span>精准匹配</span>
+				</a>
+				<a href="javascript:;" class="on">
+					<img src="../img/ind/ind/f11.png" alt="">
+					<img src="../img/ind/ind/f10.png" alt="" class="block">
+					<span>我的</span>
+				</a>
+			</nav>
+		</footer>
+	</div>
+	<script src="../bin/zepto/dist/zepto.js"></script>
+	<script src="../bin/swiper/dist/js/swiper.min.js"></script>
+	<script src="../bin/iscroll/build/iscroll.js"></script>
+	<script src="../bin/iscroll/demos/demoUtils.js"></script>
+	<script src="../bin/zepto/src/touch.js"></script>
+	<script type="text/javascript">
+		/*new Swiper('#con_nav', {
+	        slidesPerView:"auto",
+	        spaceBetween:0,
+	        freeMode: true
+		});
+
+		var async=false;
+
+		$("#w_jiesjow").tap(function(){
+			async=true;
+			$("#w_jie").animate({
+				"-webkit-transform":"translate(-100%)"
+			},1000)
+			return false
+		})
+
+
+
+		$(document).tap(function(){
+			if(async){
+				$("#w_jie").animate({
+					"-webkit-transform":"translate(0%)"
+				},1000)
+			}
+			
+		})*/
+
+
+		var myScroll;
+
+		/*function loaded () {
+			myScroll = new IScroll('#wrapper', {
+				freeScroll: true ,
+				scrollbars:true,
+				mouseWheel: true,
+				interactiveScrollbars: true,
+				shrinkScrollbars: 'scale',
+				fadeScrollbars: true
+			});
+		}*/
+
+		/*document.addEventListener('touchstart', function (e) { e.preventDefault();}, isPassive() ? {
+			capture: false,
+			passive: false
+		} : true);
+*/
+
+
+		$("#wode_collect").tap(function(){
+			location.href="wode/wode_collect.html"
+		})
+	</script>
+</body>
+
+</html>

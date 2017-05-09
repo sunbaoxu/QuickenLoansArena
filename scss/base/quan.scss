@@ -1,0 +1,31 @@
+body,html,.wrap{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	background:#F3F3F3;
+	font-size:10px;
+}
+.wrap{
+	display:-webkit-box;
+	-webkit-box-orient:vertical;
+	max-width:75rem;
+	margin:0 auto;
+}
+
+#wrapper {
+		position:relative;
+		width:100%;
+	}
+	#scroller {
+		position: absolute;
+		z-index: 1;
+		top:0;
+		left:0;
+		width:100%;
+	} 
+.clear{
+	height:0;
+	width:0;
+	overflow:hidden;
+	clear:both;
+}

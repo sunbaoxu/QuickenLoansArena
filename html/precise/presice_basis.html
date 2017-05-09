@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>精确匹配</title>
+	<link rel="stylesheet" type="text/css" href="../../css/index.css">
+</head>
+<body>
+	<div class="wrap wrap_basis">
+		<header class="header">
+			<aside class="fan"><a href="../precise.html" class="fa fa-angle-left" id="fan"></a></aside>
+			<aside>
+				<a href="javascript:;" class="title">精确匹配</a>
+				<!-- <nav>
+					<a href="javascript:;" class="on">全部</a>
+					<a href="javascript:;">借现金</a>
+					<a href="javascript:;">还信用卡</a>
+				</nav> -->
+			</aside>
+			<aside class="zi">
+
+			</aside>
+		</header>
+		<div class="main main_basis" id="wrapper">
+			<div id="scroller" class="basis">
+				<section class="kuai">
+					<div class="basis_con">
+						<nav>
+							<a href="javascript:;" class="on">
+								<span>基础信息</span>
+								<i class="yuan"></i>
+								<i class="yuan"></i>
+								<i class="fa fa-angle-right jiao"></i>
+								<i class="yuan"></i>
+								<i class="yuan"></i>
+							</a>
+							<a href="javascript:;">
+								<span>身份信息</span>
+								<i class="yuan"></i>
+								<i class="yuan"></i>
+								<i class="fa fa-angle-right jiao"></i>
+								<i class="yuan"></i>
+								<i class="yuan"></i>
+							</a>
+							<a href="javascript:;">
+								<span>信用信息</span>
+							</a>
+						</nav>
+					</div>
+				</section>
+				<section class="kuai">
+					<div class="cont basis_cont">
+						<ul class="basis_ul">
+							<li >
+								<h3>实名信息</h3>
+								<ol class="basisul_ol">
+									<li>
+										<span>姓名</span>
+										<input type="text" value="张涛">
+									</li>
+									<li>
+										<span>身份证号码</span>
+										<input type="text" value="1234567890">
+									</li>
+									<li>
+										<span>性别</span>
+										<p class="qiehuan">
+											<input type="radio" name="radio1" class="first" checked="checked">
+											<span >
+												<i class="sex_nan"></i>
+												<b>男</b>
+											</span>
+											<input  class="last" type="radio" name="radio1">
+											<span>
+												<i class="sex_nv"></i>
+												<b>女</b>
+											</span>
+										</p>
+									</li>
+									<li>
+										<span>年龄</span>
+										<input type="number" value="10">
+									</li>
+								</ol>
+							</li>
+							<li >
+								<h3>地址信息</h3>
+								<ol class="basisul_ol">
+									<li>
+										<span>现居地址</span>
+										<input type="text" value="北京市-海淀区">
+									</li>
+									<li>
+										<span>现居地址类型</span>
+										<input type="text" value="租住">
+									</li>
+									<li>
+										<span>婚姻状况</span>
+										<p class="qiehuan">
+											<input type="radio" name="radio" class="first" checked="checked">
+											<span >
+												<i class="dui"></i>
+												<b>已婚</b>
+											</span>
+											<input  class="last" type="radio" name="radio">
+											<span>
+												<i class="dui"></i>
+												<b>未婚</b>
+											</span>
+										</p>
+									</li>
+								</ol>
+							</li>
+							<li >
+								<h3>资产信息</h3>
+								<ol class="basisul_ol">
+									<li>
+										<span>房产</span>
+										<input type="text" value="无">
+									</li>
+									<li>
+										<span>车产</span>
+										<input type="text" value="无">
+									</li>
+								</ol>
+							</li>
+							<li >
+								<h3>社交信息</h3>
+								<ol class="basisul_ol">
+									<li>
+										<span>联系人姓名</span>
+										<input type="text" value="中二幼稚鬼">
+									</li>
+									<li>
+										<span>联系人手机号</span>
+										<input type="number" value="1234344443">
+									</li>
+									<li>
+										<span>与联系人关系</span>
+										<input type="text" class="直系亲属">
+									</li>
+								</ol>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<footer class="presice_footer">
+					<a class="presice_btn on" href="../precise.html">上一步</a>
+					<a class="presice_btn" href="precise/presice_basis.html">下一步</a>
+				</footer>
+			</div>
+		</div>
+	</div>
+	<script src="../../bin/zepto/dist/zepto.js"></script>
+	<script src="../../bin/swiper/dist/js/swiper.min.js"></script>
+	<script src="../../bin/iscroll/build/iscroll.js"></script>
+
+
+
+	<script type="text/javascript">
+		
+		$("#cang_nav a").tap(function(){
+			if($(this).text()){
+				$(this).addClass("on").siblings().removeClass("on")
+			}
+		})
+
+
+		$("#fan").tap(function(){
+			location.href="../wode.html"
+		})
+
+
+		/*$(".qiehuan").tap(function(){
+			console.log($(this).find("input"))
+		})*/
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>收藏</title>
+	<link rel="stylesheet" type="text/css" href="../../css/index.css">
+</head>
+<body>
+	<div class="wrap">
+		<header class="header">
+			<aside class="fan"><a href="../wode.html" class="fa fa-angle-left" id="fan"></a></aside>
+			<aside>
+				<a href="javascript:;" class="title">还款提醒</a>
+				<!-- <nav>
+					<a href="javascript:;" class="on">全部</a>
+					<a href="javascript:;">借现金</a>
+					<a href="javascript:;">还信用卡</a>
+				</nav> -->
+			</aside>
+			<aside class="zi">
+
+			</aside>
+		</header>
+		<div class="main" id="wrapper">
+			<div id="scroller">
+				<section class="kuai huan_con">
+					<div class="huan">
+						<dl>
+							<dt><img src="" alt=""></dt>
+							<dd><h3>信用钱包</h3></dd>
+						</dl>
+						<ul>
+							<li><span>1234</span><span>应还金额(元)</span></li>
+							<li><span>33</span><span>距离还款日(天)</span></li>
+							<li><span>1/5</span><span>已还期数</span></li>
+							<li><span>2016.06.07</span><span>还款日</span></li>
+						</ul>
+						<p><span>本期已换</span></p>
+						<aside><img src="../../img/geren/img/shan.png" alt=""></aside>
+					</div>
+					<div class="huan">
+						<dl>
+							<dt><img src="" alt=""></dt>
+							<dd><h3>信用钱包</h3></dd>
+						</dl>
+						<ul>
+							<li><span>1234</span><span>应还金额(元)</span></li>
+							<li><span>33</span><span>距离还款日(天)</span></li>
+							<li><span>1/5</span><span>已还期数</span></li>
+							<li><span>2016.06.07</span><span>还款日</span></li>
+						</ul>
+						<p><span>本期已换</span></p>
+						<aside><img src="../../img/geren/img/shan.png" alt=""></aside>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+	<script src="../../bin/zepto/dist/zepto.js"></script>
+	<script src="../../bin/swiper/dist/js/swiper.min.js"></script>
+	<script src="../../bin/iscroll/build/iscroll.js"></script>
+	<script src="../../bin/iscroll/demos/demoUtils.js"></script>
+	<script src="../../bin/zepto/src/touch.js"></script>
+	<script type="text/javascript">
+		$(".huan").on("swipeLeft",function(){
+			$(this).animate({
+				"-webkit-transform":"translate(-20%)"
+			},1000)
+		})
+
+		$(".huan").on("swipeRight",function(){
+			$(this).animate({
+				"-webkit-transform":"translate(-0%)"
+			},1000)
+		})
+
+		$(".huan aside").tap(function(){
+			$(this).parents(".huan").remove()
+		})
+	</script>
+</body>
+
+</html>

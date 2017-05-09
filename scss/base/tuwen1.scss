@@ -1,0 +1,26 @@
+
+.tuw_nav{
+	width:100%;
+	display:-webkit-box;
+	a{
+		display:block;
+		width:0;
+		-webkit-box-flex:1;
+		display:-webkit-box;
+		-webkit-box-orient:vertical;
+		-webkit-box-align:center;
+		padding:5px 0 8px 0;
+		box-sizing:border-box;
+		img,span{
+			display:block;
+		}
+		img{
+			width:40%;
+		}
+		span{
+			font-size:12px;
+			color:#4c4c4c;
+		}
+	}
+}
+

@@ -1,0 +1,150 @@
+.header{
+	display: -webkit-box;
+	height:44px;
+	background:#304669;
+	-webkit-box-pack:justify;
+	-webkit-box-align:center;
+	padding:0 15px;
+	box-sizing:border-box;
+	position:relative;
+	z-index:12;
+	&>aside{
+		display:block;
+		&:first-child{
+			&.loge{
+				display:-webkit-box;
+				-webkit-box-align:center;
+				a{
+					display:block;
+					background:#FEE5B0;
+					width:2.7rem;
+					height:2.7rem;
+					border-radius:1.4rem;
+					overflow:hidden;
+				}
+				span{
+					display:block;
+					font-size:1.3rem;
+					color:#fff;
+					margin-left:1.3rem;
+				}
+			}
+
+			&.fan{
+				width:7rem;
+				height:2.7rem;
+				overflow:hidden;
+				display:-webkit-box;
+				-webkit-box-align:center;
+				a{
+					font-size:2rem;
+					font-weight:bold;
+					color:#fff;
+				}
+			}
+
+			&.wode_fan{
+				width:1rem;
+			}
+		}
+		&:nth-child(2){
+			-webkit-box-flex:1;
+			display:-webkit-box;
+			-webkit-box-pack:center;
+			-webkit-box-align:center;
+			.title{
+				display:block;
+				font-size:1.5rem;
+				color:#fff;
+			}
+			nav{
+				width:80%;
+				display:-webkit-box;
+				border-radius:2.2rem;
+				overflow:hidden;
+				a{
+					display:block;
+					width:0;
+					-webkit-box-flex:1;
+					font-size:1.5rem;
+					font-weight:bold;
+					padding:0.6rem;
+					background:#2E3A5F;
+					text-align:center;
+					color:#66768F;
+					&.on{
+						background:#01CA7E;
+						color:#fff;
+
+					}
+				}
+
+				&.wode_nav{
+					a{
+						font-size:1.3rem;
+					}
+				}
+			}
+		}
+		&:last-child{
+			&.tu{
+				width:22px;
+				height:20px;
+				position:relative;
+				a{
+					display:block;
+					width:100%;
+					height:100%;
+					img{
+						&:first-child{
+							width:100%;
+						}
+					}
+
+					span{
+						position:absolute;
+						width:8px;
+						height:8px;
+						top:-4px;
+						right:-2px;
+						border-radius:4px;
+						background:#DC6464;
+					}
+				}
+			}
+
+			&.ping{
+				width:7rem;
+				height:2.7rem;
+				overflow:hidden;
+				display:-webkit-box;
+
+				a{
+					display:block;
+					width:0;
+					-webkit-box-flex:1;
+					font-size:2rem;
+					color:#fff;
+					display:-webkit-box;
+					-webkit-box-align:center;
+					padding-left:1.5rem;
+				}
+			}
+
+			&.zi{
+				width:7rem;
+				a{
+					display:block;
+					font-size:1.2rem;
+					color:#fff;
+					width:100%;
+					i{
+						float:right;
+					}
+				}
+			}
+		}
+
+		
+	}
+}
